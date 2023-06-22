@@ -1,0 +1,25 @@
+.navbar {
+  &__container {
+    position: absolute;
+    width: 100%;
+  }
+  &__menu {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    a {
+      color: var(--white);
+      font-weight: 700;
+      text-decoration: none;
+      transition: 1s;
+      text-transform: uppercase;
+      &:hover {
+        color: var(--purple);
+      }
+    }
+    input {
+      width: 100%;
+    }
+  }
+}
