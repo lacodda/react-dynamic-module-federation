@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.scss';
+import '@styles/app.scss';
 
 const App: React.FC = () => (
   <div className="app2__container">

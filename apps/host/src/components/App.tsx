@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../Navbar/navbar';
-import DynamicComponent from '../DynamicComponent/dynamic-component';
-import { LoadRemoteModule } from '../load-remote-module';
-import './style.scss';
+import Navbar from '@components/Navbar';
+import DynamicComponent from '@components/DynamicComponent';
+import { LoadRemoteModule } from '@src/load-remote-module';
+import '@styles/app.scss';
 
 const App: React.FC = () => {
   const [apps, setApps] = useState<string[]>([]);

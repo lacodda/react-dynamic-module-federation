@@ -7,13 +7,20 @@ const { createWebpackAliases } = require('./webpack.helpers');
  * based on these webpack aliases, make sure to update `tsconfig.json` file also
  * to match the `paths` we using in here for aliases in project.
  */
-module.exports = createWebpackAliases({
+module.exports = {
+  ...createWebpackAliases({
+    src: 'src',
+    components: 'src/components',
+    images: 'src/images',
+    styles: 'src/styles',
+    public: 'public',
+    build: 'dist',
+    main: 'src/main.ts',
+  }),
   '@': 'src',
-  src: 'src',
-  components: 'src/components',
-  images: 'src/images',
-  styles: 'src/styles',
-  public: 'public',
-  build: 'dist',
-  main: 'src/main.ts',
-});
+  '@src': 'src',
+  '@components': 'src/components',
+  '@images': 'src/images',
+  '@styles': 'src/styles',
+  '@public': 'public',
+};

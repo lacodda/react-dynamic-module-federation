@@ -19,7 +19,7 @@ function getModuleFederationPlugin () {
     name: process.env.APP_NAME,
     filename: 'remoteEntry.js',
     exposes: {
-      './Module': './src/components/App/app',
+      './Module': './src/components/App',
     },
     shared: getShared(),
   });

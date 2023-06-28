@@ -1,5 +1,5 @@
 import React, { type DetailedHTMLProps, type HTMLAttributes, type Dispatch } from 'react';
-import './style.scss';
+import '@styles/navbar.scss';
 
 export interface NavbarProps extends DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement> {
   apps: string[];
