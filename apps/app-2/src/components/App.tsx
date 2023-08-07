@@ -1,12 +1,34 @@
 import React from 'react';
-import '@styles/app.scss';
+import styled from 'styled-components';
 
-const App: React.FC = () => (
-  <div className="app2__container">
-    <div className="app2__title">
+const Container = styled.div`
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background: var(--gr-lime-blue);
+  width: 100%;
+  height: 100%;
+`;
+
+const Title = styled.div`
+  display: flex;
+  h1 {
+    font-size: var(--font-size-h1);
+    width: max-content;
+    text-transform: uppercase;
+    background: var(--teal);
+    background: var(--gr-teal-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+`;
+
+export const App: React.FC = () => (
+  <Container>
+    <Title>
       <h1>App 2</h1>
-    </div>
-  </div>
+    </Title>
+  </Container>
 );
 
 export default App;
